@@ -1,0 +1,561 @@
+🖥🖥🖥 SEEDING THE DB 🖥🖥🖥
+{
+  user: {
+    id: 1,
+    profile_name: 'user1',
+    name: "Arrow's breeder",
+    passwordhash: '$2a$13$e6f.awtWPRdg/s4f.8znwufabBjWs02DUJ/afleKzAsxMMxIIqCye',
+    email: 'test1@test.com',
+    location: { zip: 46226, lat: 39.42143308215842, lon: -88.23041411499528 },
+    updatedAt: '2021-09-06T04:28:47.329Z',
+    createdAt: '2021-09-06T04:28:47.329Z'
+  },
+  message: 'Success! Profile for user1 created!',
+  sessionToken: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNjMwOTAyNTM4LCJleHAiOjE2MzA5ODg5Mzh9.r_s0j1H0Xw19xLpFT5ZLwhlp0L2p5PxIkgNRKyGMXME'
+}
+{
+  user: {
+    id: 4,
+    profile_name: 'user4',
+    name: "Lassie's breeder",
+    passwordhash: '$2a$13$2UllasIidxld./RO7PVRxexFA02g1kYYfJ6pUx9ZGfDTuq0jrpmc.',
+    email: 'test4@test.com',
+    location: { zip: 46210, lat: 39.467514391506114, lon: -88.10160591834631 },
+    updatedAt: '2021-09-06T04:28:49.140Z',
+    createdAt: '2021-09-06T04:28:49.140Z'
+  },
+  message: 'Success! Profile for user4 created!',
+  sessionToken: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NCwiaWF0IjoxNjMwOTAyNTM4LCJleHAiOjE2MzA5ODg5Mzh9.I3SHBrQY2m1gKh3P_XdhqzIMriCYFJ-csazSSjYl4qg'
+}
+{
+  user: {
+    id: 6,
+    profile_name: 'user6',
+    name: "Emily's breeder",
+    passwordhash: '$2a$13$1Vp9TE2QQqhzadqcX62z1ugm8JkOHOQHGhJyZa6VVUJzBQq4kmCGC',
+    email: 'test6@test.com',
+    location: { zip: 46209, lat: 39.55241032155282, lon: -88.36401350719876 },
+    updatedAt: '2021-09-06T04:28:50.312Z',
+    createdAt: '2021-09-06T04:28:50.312Z'
+  },
+  message: 'Success! Profile for user6 created!',
+  sessionToken: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NiwiaWF0IjoxNjMwOTAyNTM4LCJleHAiOjE2MzA5ODg5Mzh9.8WLB2ZOZwmQ-dZk0eCQ9866EtyLEllZGP4Lu_lAPFUI'
+}
+{
+  user: {
+    id: 5,
+    profile_name: 'user5',
+    name: "Spot's breeder",
+    passwordhash: '$2a$13$BxDpsPsGuH5VR6JUBcWbtOBpU6XXfpdM7U6xguZ2Of/IeXWTh8kBm',
+    email: 'test5@test.com',
+    location: { zip: 46225, lat: 39.35815648877394, lon: -88.59389246948741 },
+    updatedAt: '2021-09-06T04:28:49.726Z',
+    createdAt: '2021-09-06T04:28:49.726Z'
+  },
+  message: 'Success! Profile for user5 created!',
+  sessionToken: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NSwiaWF0IjoxNjMwOTAyNTM4LCJleHAiOjE2MzA5ODg5Mzh9.mkGZ9_0tmR15qFms_z6ZPz6asX5NINAp8ii0PEXk7nI'
+}
+{
+  user: {
+    id: 2,
+    profile_name: 'user2',
+    name: "Bessie's breeder",
+    passwordhash: '$2a$13$V6opeuczveGa7zs2OcudU.QA449wXm.MvDfZsA1qMHiumoJl2Wraa',
+    email: 'test2@test.com',
+    location: { zip: 46224, lat: 39.27068714306652, lon: -88.71567656437546 },
+    updatedAt: '2021-09-06T04:28:47.940Z',
+    createdAt: '2021-09-06T04:28:47.940Z'
+  },
+  message: 'Success! Profile for user2 created!',
+  sessionToken: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwiaWF0IjoxNjMwOTAyNTM4LCJleHAiOjE2MzA5ODg5Mzh9.w5q8s_pfiZHtY3enqAYHbjTBb2dZiC3IOo9xooCGtrI'
+}
+{
+  user: {
+    id: 3,
+    profile_name: 'user3',
+    name: "Cinder's breeder",
+    passwordhash: '$2a$13$JQ.0Jf681cAGsGSWhOOW..HZpSUSUxn9N8Cj.Y3E7Pz4BzHP4fAc2',
+    email: 'test3@test.com',
+    location: { zip: 46225, lat: 39.87437216040045, lon: -88.16888298806452 },
+    updatedAt: '2021-09-06T04:28:48.545Z',
+    createdAt: '2021-09-06T04:28:48.545Z'
+  },
+  message: 'Success! Profile for user3 created!',
+  sessionToken: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywiaWF0IjoxNjMwOTAyNTM4LCJleHAiOjE2MzA5ODg5Mzh9.g3sofZdMbmJhwFnew1cnnK-KrQTrAjV6ojrfBHyQvb4'
+}
+{
+  user: {
+    id: 7,
+    profile_name: 'user7',
+    name: "Fido's breeder",
+    passwordhash: '$2a$13$yXr8y8h1CG/F5oRagVF5p.JmePm6IGLL2LQ1SgnsP3XRWH8U7dSL6',
+    email: 'test7@test.com',
+    location: { zip: 46228, lat: 39.848008935340445, lon: -88.62704271466193 },
+    updatedAt: '2021-09-06T04:28:50.894Z',
+    createdAt: '2021-09-06T04:28:50.894Z'
+  },
+  message: 'Success! Profile for user7 created!',
+  sessionToken: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NywiaWF0IjoxNjMwOTAyNTM4LCJleHAiOjE2MzA5ODg5Mzh9.7uvUF38WQ6cgsfl8JR_JSqO1Qhb1s_Fs1oF_XYY8dFI'
+}
+{
+  user: {
+    id: 8,
+    profile_name: 'user8',
+    name: "Luca's breeder",
+    passwordhash: '$2a$13$mx3tjXQBBq40H4Qsob31TekrB9iiRgy9feDD8XAU/fgZkpkgXu0nu',
+    email: 'test8@test.com',
+    location: { zip: 46207, lat: 39.09218943538376, lon: -88.30038501071483 },
+    updatedAt: '2021-09-06T04:28:51.480Z',
+    createdAt: '2021-09-06T04:28:51.480Z'
+  },
+  message: 'Success! Profile for user8 created!',
+  sessionToken: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6OCwiaWF0IjoxNjMwOTAyNTM4LCJleHAiOjE2MzA5ODg5Mzh9.yAddq6qDdbZ9pixPLNn_H7_EG0mHQ7ASkbjaSy1G2X8'
+}
+{
+  user: {
+    id: 9,
+    profile_name: 'user9',
+    name: "Bixby's breeder",
+    passwordhash: '$2a$13$1kUW4BsiwjxZWn8GsOTSMu3CQatJi6pBu/rfKBgQv867OkA66VWcK',
+    email: 'test9@test.com',
+    location: { zip: 46204, lat: 39.40128016036859, lon: -88.6893923235131 },
+    updatedAt: '2021-09-06T04:28:52.063Z',
+    createdAt: '2021-09-06T04:28:52.063Z'
+  },
+  message: 'Success! Profile for user9 created!',
+  sessionToken: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6OSwiaWF0IjoxNjMwOTAyNTM4LCJleHAiOjE2MzA5ODg5Mzh9.OY-UbAMuZhOJSemX0St2s9BpeMXx8OUCDUV0yRlx_p8'
+}
+{
+  user: {
+    id: 10,
+    profile_name: 'user10',
+    name: "Storm's breeder",
+    passwordhash: '$2a$13$TFHOhIYdU5AjjYGdecYZtu3tSJEEHkNmQme4kck7hao8PoopO61rm',
+    email: 'test10@test.com',
+    location: { zip: 46203, lat: 39.90335735125627, lon: -88.99291444090264 },
+    updatedAt: '2021-09-06T04:28:52.666Z',
+    createdAt: '2021-09-06T04:28:52.666Z'
+  },
+  message: 'Success! Profile for user10 created!',
+  sessionToken: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTAsImlhdCI6MTYzMDkwMjUzOCwiZXhwIjoxNjMwOTg4OTM4fQ.agBmZc3UokTRM2gLWar3s9q1iKpodozApBtpo4KFgYw'
+}
+{
+  user: {
+    id: 11,
+    profile_name: 'user11',
+    name: "Parker's breeder",
+    passwordhash: '$2a$13$G/CFOtJd6ABs0nl.oQvs7ekM7wPtcRVQrXCwR7HsqImDcohFZxCxK',
+    email: 'test11@test.com',
+    location: { zip: 46224, lat: 39.78259719719824, lon: -88.7777802782231 },
+    updatedAt: '2021-09-06T04:28:53.252Z',
+    createdAt: '2021-09-06T04:28:53.252Z'
+  },
+  message: 'Success! Profile for user11 created!',
+  sessionToken: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTEsImlhdCI6MTYzMDkwMjUzOCwiZXhwIjoxNjMwOTg4OTM4fQ.V5z07nrNxyMiTGlRvDWTiPevS7A0UeSbAdDmbcY0QYc'
+}
+{
+  user: {
+    id: 12,
+    profile_name: 'user12',
+    name: "Crissy's breeder",
+    passwordhash: '$2a$13$RHaYlYHwtF9Jy6z/dbW1ROpJ2n43izxg1G6A.38GlBg5xSm.7xSk6',
+    email: 'test12@test.com',
+    location: { zip: 46204, lat: 39.884988543129765, lon: -88.93547417901924 },
+    updatedAt: '2021-09-06T04:28:53.836Z',
+    createdAt: '2021-09-06T04:28:53.836Z'
+  },
+  message: 'Success! Profile for user12 created!',
+  sessionToken: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTIsImlhdCI6MTYzMDkwMjUzOCwiZXhwIjoxNjMwOTg4OTM4fQ.oSMoMv7xLTKTgrq0v8rA4jfiHV33CZtiiaJuyza6Vdk'
+}
+{
+  user: {
+    id: 13,
+    profile_name: 'user13',
+    name: "Chewy's breeder",
+    passwordhash: '$2a$13$y5pzoc957onb1THI8JKdPOhZ3GNWc7DTZo5y06kyGs9Bj292rquNm',
+    email: 'test13@test.com',
+    location: { zip: 46205, lat: 39.942123032298255, lon: -88.48304815843308 },
+    updatedAt: '2021-09-06T04:28:54.423Z',
+    createdAt: '2021-09-06T04:28:54.423Z'
+  },
+  message: 'Success! Profile for user13 created!',
+  sessionToken: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTMsImlhdCI6MTYzMDkwMjUzOCwiZXhwIjoxNjMwOTg4OTM4fQ.mHAVrv4tOrgYaQC8iTBnwGlQ7TLaBC0384bnu8_ReeA'
+}
+{
+  user: {
+    id: 14,
+    profile_name: 'user14',
+    name: "Samus's breeder",
+    passwordhash: '$2a$13$ro3JfamCjoj.wrB48CYpx.lVEiwen01VRpOvpd4d2bYWfDbokF5kO',
+    email: 'test14@test.com',
+    location: { zip: 46216, lat: 39.88681530057354, lon: -88.50672267804015 },
+    updatedAt: '2021-09-06T04:28:55.009Z',
+    createdAt: '2021-09-06T04:28:55.009Z'
+  },
+  message: 'Success! Profile for user14 created!',
+  sessionToken: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTQsImlhdCI6MTYzMDkwMjUzOCwiZXhwIjoxNjMwOTg4OTM4fQ.tGOsF-j6JCxMNCaOqf9SXjqc94w4-XbjbX56pfaR__8'
+}
+{
+  user: {
+    id: 15,
+    profile_name: 'user15',
+    name: "Appa's breeder",
+    passwordhash: '$2a$13$iohUWaTmi5b1z0xPj0RSsumSq6g/CGqTgFb.u5mmcVPk6ByaTIxg6',
+    email: 'test15@test.com',
+    location: { zip: 46201, lat: 39.398759256338785, lon: -88.31533684978682 },
+    updatedAt: '2021-09-06T04:28:55.593Z',
+    createdAt: '2021-09-06T04:28:55.593Z'
+  },
+  message: 'Success! Profile for user15 created!',
+  sessionToken: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTUsImlhdCI6MTYzMDkwMjUzOCwiZXhwIjoxNjMwOTg4OTM4fQ.WKwxDo-EBH-cebxVVDRH48r6ndBGplNuO7E9AkkjPpc'
+}
+{
+  user: {
+    id: 16,
+    profile_name: 'user16',
+    name: "Cadbury's breeder",
+    passwordhash: '$2a$13$UzItU0x2JXUAL9fM4lldYuczhbCso5T1NPEnEI.Mv3awfsnlfBs/K',
+    email: 'test16@test.com',
+    location: { zip: 46223, lat: 39.532456622776714, lon: -88.25091398406093 },
+    updatedAt: '2021-09-06T04:28:56.179Z',
+    createdAt: '2021-09-06T04:28:56.179Z'
+  },
+  message: 'Success! Profile for user16 created!',
+  sessionToken: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTYsImlhdCI6MTYzMDkwMjUzOCwiZXhwIjoxNjMwOTg4OTM4fQ.hwMRFW8w-VZzs6utsyMyj_nFB9cFw8o332NgpPENSIE'
+}
+{
+  user: {
+    id: 17,
+    profile_name: 'user17',
+    name: "Wrigley's breeder",
+    passwordhash: '$2a$13$A8V.8GwUK2/CQje0srPUJei2aSfliP/SK91XqqISJn7WlQDhpeaJa',
+    email: 'test17@test.com',
+    location: { zip: 46225, lat: 39.68065164080458, lon: -88.62327336372708 },
+    updatedAt: '2021-09-06T04:28:56.794Z',
+    createdAt: '2021-09-06T04:28:56.794Z'
+  },
+  message: 'Success! Profile for user17 created!',
+  sessionToken: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTcsImlhdCI6MTYzMDkwMjUzOCwiZXhwIjoxNjMwOTg4OTM4fQ.fhSA2C4JEKNQx0MLmhpmxFFQE3dvQ0uhipw4a9wjoN4'
+}
+{
+  user: {
+    id: 18,
+    profile_name: 'user18',
+    name: "Dahlia's breeder",
+    passwordhash: '$2a$13$YCPIv4E1JC2ZNcfERwVi2uDQUmVUMaoRniJWm2Ge/566q0x6sBrri',
+    email: 'test18@test.com',
+    location: { zip: 46217, lat: 39.12147759369448, lon: -88.50405347880968 },
+    updatedAt: '2021-09-06T04:28:57.397Z',
+    createdAt: '2021-09-06T04:28:57.397Z'
+  },
+  message: 'Success! Profile for user18 created!',
+  sessionToken: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTgsImlhdCI6MTYzMDkwMjUzOCwiZXhwIjoxNjMwOTg4OTM4fQ.byrZBai5cCV5QZyIvSww9GggHJcu6FM9S_6A-hUMkDc'
+}
+{
+  user: {
+    id: 19,
+    profile_name: 'user19',
+    name: "Beast's breeder",
+    passwordhash: '$2a$13$ctRL/kORKGGuWd0pKR2K7uYFR4JNeQzSW8IQUwPIrORHb78hgXxRq',
+    email: 'test19@test.com',
+    location: { zip: 46203, lat: 39.184651766977844, lon: -88.66539128056621 },
+    updatedAt: '2021-09-06T04:28:58.003Z',
+    createdAt: '2021-09-06T04:28:58.003Z'
+  },
+  message: 'Success! Profile for user19 created!',
+  sessionToken: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTksImlhdCI6MTYzMDkwMjUzOCwiZXhwIjoxNjMwOTg4OTM4fQ.VvUM0TgjuGT3nIfNzvOsjuVUn23F64O-1aoLCAjJ8Fo'
+}
+{
+  user: {
+    id: 20,
+    profile_name: 'user20',
+    name: "Artemis's breeder",
+    passwordhash: '$2a$13$Fp9sy.pavjofg1L18cv5Uuj/4bhEqo5Vh7DiIJD8.pV.dy.hBwU.y',
+    email: 'test20@test.com',
+    location: { zip: 46202, lat: 39.52807590531479, lon: -88.33933755797382 },
+    updatedAt: '2021-09-06T04:28:58.593Z',
+    createdAt: '2021-09-06T04:28:58.593Z'
+  },
+  message: 'Success! Profile for user20 created!',
+  sessionToken: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MjAsImlhdCI6MTYzMDkwMjUzOCwiZXhwIjoxNjMwOTg4OTM4fQ.zKr90y34ALLpi0NRabVXXEGAnyGpXIDBviPaK_W4-Zo'
+}
+{
+  photo_url: 'https://images.unsplash.com/photo-1518020382113-a7e8fc38eac9?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8c2lsbHklMjBkb2d8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60',
+  name: 'Arrow',
+  breed: 'Bruno Jura Hound',
+  weight: 92,
+  age: 5,
+  ad_description: 'Pit bull lap dog puppies chihuahua, german shephard peanut butter growl milk bone pomeranian sit. Squirrel stand english mastiff release dog bone growl dog bone, jump milk bone lab greyhound take it heel. Tennis ball stay jump beagle sit pretty german shephard pomsky. Dog milk bone bulldog german shephard dachshund, puppy speak shih tzu stand husky bark doberman pinscher dog stay. Bell bulldog release Morkie great dance paw tennis ball leash bulldog, dog come yorkshire terrier german shephard.',
+  temperament: [ 'Loyal', 'Gentle' ],
+  is_female: false,
+  id: 1,
+  userId: 1,
+  updatedAt: '2021-09-06T04:28:58.642Z',
+  createdAt: '2021-09-06T04:28:58.642Z'
+}
+{
+  photo_url: 'https://images.unsplash.com/photo-1518020382113-a7e8fc38eac9?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8c2lsbHklMjBkb2d8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60',
+  name: 'Lassie',
+  breed: 'Norrbottenspets',
+  weight: 77,
+  age: 2,
+  ad_description: 'Pit bull lap dog puppies chihuahua, german shephard peanut butter growl milk bone pomeranian sit. Squirrel stand english mastiff release dog bone growl dog bone, jump milk bone lab greyhound take it heel. Tennis ball stay jump beagle sit pretty german shephard pomsky. Dog milk bone bulldog german shephard dachshund, puppy speak shih tzu stand husky bark doberman pinscher dog stay. Bell bulldog release Morkie great dance paw tennis ball leash bulldog, dog come yorkshire terrier german shephard.',
+  temperament: [ 'Active', 'Fun-loving' ],
+  is_female: true,
+  id: 4,
+  userId: 4,
+  updatedAt: '2021-09-06T04:28:58.644Z',
+  createdAt: '2021-09-06T04:28:58.644Z'
+}
+{
+  photo_url: 'https://images.unsplash.com/photo-1518020382113-a7e8fc38eac9?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8c2lsbHklMjBkb2d8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60',
+  name: 'Emily',
+  breed: 'Polish Tatra Sheepdog',
+  weight: 97,
+  age: 7,
+  ad_description: 'Pit bull lap dog puppies chihuahua, german shephard peanut butter growl milk bone pomeranian sit. Squirrel stand english mastiff release dog bone growl dog bone, jump milk bone lab greyhound take it heel. Tennis ball stay jump beagle sit pretty german shephard pomsky. Dog milk bone bulldog german shephard dachshund, puppy speak shih tzu stand husky bark doberman pinscher dog stay. Bell bulldog release Morkie great dance paw tennis ball leash bulldog, dog come yorkshire terrier german shephard.',
+  temperament: [ 'Friendly', 'Assertive' ],
+  is_female: true,
+  id: 6,
+  userId: 6,
+  updatedAt: '2021-09-06T04:28:58.645Z',
+  createdAt: '2021-09-06T04:28:58.645Z'
+}
+{
+  photo_url: 'https://images.unsplash.com/photo-1518020382113-a7e8fc38eac9?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8c2lsbHklMjBkb2d8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60',
+  name: 'Spot',
+  breed: 'Newfoundland',
+  weight: 37,
+  age: 5,
+  ad_description: 'Pit bull lap dog puppies chihuahua, german shephard peanut butter growl milk bone pomeranian sit. Squirrel stand english mastiff release dog bone growl dog bone, jump milk bone lab greyhound take it heel. Tennis ball stay jump beagle sit pretty german shephard pomsky. Dog milk bone bulldog german shephard dachshund, puppy speak shih tzu stand husky bark doberman pinscher dog stay. Bell bulldog release Morkie great dance paw tennis ball leash bulldog, dog come yorkshire terrier german shephard.',
+  temperament: [ 'Stubborn', 'Curious' ],
+  is_female: false,
+  id: 5,
+  userId: 5,
+  updatedAt: '2021-09-06T04:28:58.646Z',
+  createdAt: '2021-09-06T04:28:58.646Z'
+}
+{
+  photo_url: 'https://images.unsplash.com/photo-1518020382113-a7e8fc38eac9?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8c2lsbHklMjBkb2d8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60',
+  name: 'Fido',
+  breed: 'Kyi-Leo',
+  weight: 43,
+  age: 7,
+  ad_description: 'Pit bull lap dog puppies chihuahua, german shephard peanut butter growl milk bone pomeranian sit. Squirrel stand english mastiff release dog bone growl dog bone, jump milk bone lab greyhound take it heel. Tennis ball stay jump beagle sit pretty german shephard pomsky. Dog milk bone bulldog german shephard dachshund, puppy speak shih tzu stand husky bark doberman pinscher dog stay. Bell bulldog release Morkie great dance paw tennis ball leash bulldog, dog come yorkshire terrier german shephard.',
+  temperament: [ 'Protective', 'Trainable' ],
+  is_female: false,
+  id: 7,
+  userId: 7,
+  updatedAt: '2021-09-06T04:28:58.655Z',
+  createdAt: '2021-09-06T04:28:58.655Z'
+}
+{
+  photo_url: 'https://images.unsplash.com/photo-1518020382113-a7e8fc38eac9?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8c2lsbHklMjBkb2d8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60',
+  name: 'Cinder',
+  breed: 'Smooth Collie',
+  weight: 34,
+  age: 9,
+  ad_description: 'Pit bull lap dog puppies chihuahua, german shephard peanut butter growl milk bone pomeranian sit. Squirrel stand english mastiff release dog bone growl dog bone, jump milk bone lab greyhound take it heel. Tennis ball stay jump beagle sit pretty german shephard pomsky. Dog milk bone bulldog german shephard dachshund, puppy speak shih tzu stand husky bark doberman pinscher dog stay. Bell bulldog release Morkie great dance paw tennis ball leash bulldog, dog come yorkshire terrier german shephard.',
+  temperament: [ 'Friendly', 'Assertive' ],
+  is_female: false,
+  id: 3,
+  userId: 3,
+  updatedAt: '2021-09-06T04:28:58.656Z',
+  createdAt: '2021-09-06T04:28:58.656Z'
+}
+{
+  photo_url: 'https://images.unsplash.com/photo-1518020382113-a7e8fc38eac9?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8c2lsbHklMjBkb2d8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60',
+  name: 'Bessie',
+  breed: 'Polish Tatra Sheepdog',
+  weight: 73,
+  age: 3,
+  ad_description: 'Pit bull lap dog puppies chihuahua, german shephard peanut butter growl milk bone pomeranian sit. Squirrel stand english mastiff release dog bone growl dog bone, jump milk bone lab greyhound take it heel. Tennis ball stay jump beagle sit pretty german shephard pomsky. Dog milk bone bulldog german shephard dachshund, puppy speak shih tzu stand husky bark doberman pinscher dog stay. Bell bulldog release Morkie great dance paw tennis ball leash bulldog, dog come yorkshire terrier german shephard.',
+  temperament: [ 'Friendly', 'Assertive' ],
+  is_female: true,
+  id: 2,
+  userId: 2,
+  updatedAt: '2021-09-06T04:28:58.657Z',
+  createdAt: '2021-09-06T04:28:58.657Z'
+}
+{
+  photo_url: 'https://images.unsplash.com/photo-1518020382113-a7e8fc38eac9?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8c2lsbHklMjBkb2d8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60',
+  name: 'Luca',
+  breed: 'Rafeiro do Alentejo',
+  weight: 21,
+  age: 7,
+  ad_description: 'Pit bull lap dog puppies chihuahua, german shephard peanut butter growl milk bone pomeranian sit. Squirrel stand english mastiff release dog bone growl dog bone, jump milk bone lab greyhound take it heel. Tennis ball stay jump beagle sit pretty german shephard pomsky. Dog milk bone bulldog german shephard dachshund, puppy speak shih tzu stand husky bark doberman pinscher dog stay. Bell bulldog release Morkie great dance paw tennis ball leash bulldog, dog come yorkshire terrier german shephard.',
+  temperament: [ 'Dutiful', 'Responsible' ],
+  is_female: true,
+  id: 8,
+  userId: 8,
+  updatedAt: '2021-09-06T04:28:58.661Z',
+  createdAt: '2021-09-06T04:28:58.661Z'
+}
+{
+  photo_url: 'https://images.unsplash.com/photo-1518020382113-a7e8fc38eac9?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8c2lsbHklMjBkb2d8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60',
+  name: 'Bixby',
+  breed: 'Bull and Terrier',
+  weight: 23,
+  age: 7,
+  ad_description: 'Pit bull lap dog puppies chihuahua, german shephard peanut butter growl milk bone pomeranian sit. Squirrel stand english mastiff release dog bone growl dog bone, jump milk bone lab greyhound take it heel. Tennis ball stay jump beagle sit pretty german shephard pomsky. Dog milk bone bulldog german shephard dachshund, puppy speak shih tzu stand husky bark doberman pinscher dog stay. Bell bulldog release Morkie great dance paw tennis ball leash bulldog, dog come yorkshire terrier german shephard.',
+  temperament: [ 'Stubborn', 'Curious' ],
+  is_female: false,
+  id: 9,
+  userId: 9,
+  updatedAt: '2021-09-06T04:28:58.669Z',
+  createdAt: '2021-09-06T04:28:58.669Z'
+}
+{
+  photo_url: 'https://images.unsplash.com/photo-1518020382113-a7e8fc38eac9?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8c2lsbHklMjBkb2d8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60',
+  name: 'Storm',
+  breed: 'Porcelaine',
+  weight: 84,
+  age: 4,
+  ad_description: 'Pit bull lap dog puppies chihuahua, german shephard peanut butter growl milk bone pomeranian sit. Squirrel stand english mastiff release dog bone growl dog bone, jump milk bone lab greyhound take it heel. Tennis ball stay jump beagle sit pretty german shephard pomsky. Dog milk bone bulldog german shephard dachshund, puppy speak shih tzu stand husky bark doberman pinscher dog stay. Bell bulldog release Morkie great dance paw tennis ball leash bulldog, dog come yorkshire terrier german shephard.',
+  temperament: [ 'Energetic', 'Loyal' ],
+  is_female: true,
+  id: 10,
+  userId: 10,
+  updatedAt: '2021-09-06T04:28:58.670Z',
+  createdAt: '2021-09-06T04:28:58.670Z'
+}
+{
+  photo_url: 'https://images.unsplash.com/photo-1518020382113-a7e8fc38eac9?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8c2lsbHklMjBkb2d8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60',
+  name: 'Parker',
+  breed: 'Boston Terrier',
+  weight: 15,
+  age: 5,
+  ad_description: 'Pit bull lap dog puppies chihuahua, german shephard peanut butter growl milk bone pomeranian sit. Squirrel stand english mastiff release dog bone growl dog bone, jump milk bone lab greyhound take it heel. Tennis ball stay jump beagle sit pretty german shephard pomsky. Dog milk bone bulldog german shephard dachshund, puppy speak shih tzu stand husky bark doberman pinscher dog stay. Bell bulldog release Morkie great dance paw tennis ball leash bulldog, dog come yorkshire terrier german shephard.',
+  temperament: [ 'Curious', 'Playful' ],
+  is_female: false,
+  id: 11,
+  userId: 11,
+  updatedAt: '2021-09-06T04:28:58.678Z',
+  createdAt: '2021-09-06T04:28:58.678Z'
+}
+{
+  photo_url: 'https://images.unsplash.com/photo-1518020382113-a7e8fc38eac9?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8c2lsbHklMjBkb2d8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60',
+  name: 'Crissy',
+  breed: 'English Springer Spaniel',
+  weight: 69,
+  age: 6,
+  ad_description: 'Pit bull lap dog puppies chihuahua, german shephard peanut butter growl milk bone pomeranian sit. Squirrel stand english mastiff release dog bone growl dog bone, jump milk bone lab greyhound take it heel. Tennis ball stay jump beagle sit pretty german shephard pomsky. Dog milk bone bulldog german shephard dachshund, puppy speak shih tzu stand husky bark doberman pinscher dog stay. Bell bulldog release Morkie great dance paw tennis ball leash bulldog, dog come yorkshire terrier german shephard.',
+  temperament: [ 'Playful', 'Adventurous' ],
+  is_female: true,
+  id: 12,
+  userId: 12,
+  updatedAt: '2021-09-06T04:28:58.679Z',
+  createdAt: '2021-09-06T04:28:58.679Z'
+}
+{
+  photo_url: 'https://images.unsplash.com/photo-1518020382113-a7e8fc38eac9?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8c2lsbHklMjBkb2d8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60',
+  name: 'Chewy',
+  breed: 'Miniature Australian Shepherd',
+  weight: 97,
+  age: 6,
+  ad_description: 'Pit bull lap dog puppies chihuahua, german shephard peanut butter growl milk bone pomeranian sit. Squirrel stand english mastiff release dog bone growl dog bone, jump milk bone lab greyhound take it heel. Tennis ball stay jump beagle sit pretty german shephard pomsky. Dog milk bone bulldog german shephard dachshund, puppy speak shih tzu stand husky bark doberman pinscher dog stay. Bell bulldog release Morkie great dance paw tennis ball leash bulldog, dog come yorkshire terrier german shephard.',
+  temperament: [ 'Friendly', 'Assertive' ],
+  is_female: false,
+  id: 13,
+  userId: 13,
+  updatedAt: '2021-09-06T04:28:58.680Z',
+  createdAt: '2021-09-06T04:28:58.680Z'
+}
+{
+  photo_url: 'https://images.unsplash.com/photo-1518020382113-a7e8fc38eac9?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8c2lsbHklMjBkb2d8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60',
+  name: 'Samus',
+  breed: 'Pharaoh Hound',
+  weight: 95,
+  age: 8,
+  ad_description: 'Pit bull lap dog puppies chihuahua, german shephard peanut butter growl milk bone pomeranian sit. Squirrel stand english mastiff release dog bone growl dog bone, jump milk bone lab greyhound take it heel. Tennis ball stay jump beagle sit pretty german shephard pomsky. Dog milk bone bulldog german shephard dachshund, puppy speak shih tzu stand husky bark doberman pinscher dog stay. Bell bulldog release Morkie great dance paw tennis ball leash bulldog, dog come yorkshire terrier german shephard.',
+  temperament: [ 'Fun-loving', 'Loving' ],
+  is_female: true,
+  id: 14,
+  userId: 14,
+  updatedAt: '2021-09-06T04:28:58.681Z',
+  createdAt: '2021-09-06T04:28:58.681Z'
+}
+{
+  photo_url: 'https://images.unsplash.com/photo-1518020382113-a7e8fc38eac9?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8c2lsbHklMjBkb2d8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60',
+  name: 'Appa',
+  breed: 'Miniature American Shepherd',
+  weight: 18,
+  age: 7,
+  ad_description: 'Pit bull lap dog puppies chihuahua, german shephard peanut butter growl milk bone pomeranian sit. Squirrel stand english mastiff release dog bone growl dog bone, jump milk bone lab greyhound take it heel. Tennis ball stay jump beagle sit pretty german shephard pomsky. Dog milk bone bulldog german shephard dachshund, puppy speak shih tzu stand husky bark doberman pinscher dog stay. Bell bulldog release Morkie great dance paw tennis ball leash bulldog, dog come yorkshire terrier german shephard.',
+  temperament: [ 'Curious', 'Playful' ],
+  is_female: false,
+  id: 15,
+  userId: 15,
+  updatedAt: '2021-09-06T04:28:58.683Z',
+  createdAt: '2021-09-06T04:28:58.683Z'
+}
+{
+  photo_url: 'https://images.unsplash.com/photo-1518020382113-a7e8fc38eac9?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8c2lsbHklMjBkb2d8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60',
+  name: 'Cadbury',
+  breed: 'Sussex Spaniel',
+  weight: 27,
+  age: 7,
+  ad_description: 'Pit bull lap dog puppies chihuahua, german shephard peanut butter growl milk bone pomeranian sit. Squirrel stand english mastiff release dog bone growl dog bone, jump milk bone lab greyhound take it heel. Tennis ball stay jump beagle sit pretty german shephard pomsky. Dog milk bone bulldog german shephard dachshund, puppy speak shih tzu stand husky bark doberman pinscher dog stay. Bell bulldog release Morkie great dance paw tennis ball leash bulldog, dog come yorkshire terrier german shephard.',
+  temperament: [ 'Friendly', 'Assertive' ],
+  is_female: true,
+  id: 16,
+  userId: 16,
+  updatedAt: '2021-09-06T04:28:58.684Z',
+  createdAt: '2021-09-06T04:28:58.684Z'
+}
+{
+  photo_url: 'https://images.unsplash.com/photo-1518020382113-a7e8fc38eac9?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8c2lsbHklMjBkb2d8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60',
+  name: 'Wrigley',
+  breed: 'Cimarrón Uruguayo',
+  weight: 84,
+  age: 5,
+  ad_description: 'Pit bull lap dog puppies chihuahua, german shephard peanut butter growl milk bone pomeranian sit. Squirrel stand english mastiff release dog bone growl dog bone, jump milk bone lab greyhound take it heel. Tennis ball stay jump beagle sit pretty german shephard pomsky. Dog milk bone bulldog german shephard dachshund, puppy speak shih tzu stand husky bark doberman pinscher dog stay. Bell bulldog release Morkie great dance paw tennis ball leash bulldog, dog come yorkshire terrier german shephard.',
+  temperament: [ 'Curious', 'Playful' ],
+  is_female: false,
+  id: 17,
+  userId: 17,
+  updatedAt: '2021-09-06T04:28:58.685Z',
+  createdAt: '2021-09-06T04:28:58.685Z'
+}
+{
+  photo_url: 'https://images.unsplash.com/photo-1518020382113-a7e8fc38eac9?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8c2lsbHklMjBkb2d8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60',
+  name: 'Beast',
+  breed: 'Small Greek Domestic Dog',
+  weight: 41,
+  age: 8,
+  ad_description: 'Pit bull lap dog puppies chihuahua, german shephard peanut butter growl milk bone pomeranian sit. Squirrel stand english mastiff release dog bone growl dog bone, jump milk bone lab greyhound take it heel. Tennis ball stay jump beagle sit pretty german shephard pomsky. Dog milk bone bulldog german shephard dachshund, puppy speak shih tzu stand husky bark doberman pinscher dog stay. Bell bulldog release Morkie great dance paw tennis ball leash bulldog, dog come yorkshire terrier german shephard.',
+  temperament: [ 'Fun-loving', 'Loving' ],
+  is_female: false,
+  id: 19,
+  userId: 19,
+  updatedAt: '2021-09-06T04:28:58.685Z',
+  createdAt: '2021-09-06T04:28:58.685Z'
+}
+{
+  photo_url: 'https://images.unsplash.com/photo-1518020382113-a7e8fc38eac9?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8c2lsbHklMjBkb2d8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60',
+  name: 'Dahlia',
+  breed: 'Berger Picard',
+  weight: 55,
+  age: 3,
+  ad_description: 'Pit bull lap dog puppies chihuahua, german shephard peanut butter growl milk bone pomeranian sit. Squirrel stand english mastiff release dog bone growl dog bone, jump milk bone lab greyhound take it heel. Tennis ball stay jump beagle sit pretty german shephard pomsky. Dog milk bone bulldog german shephard dachshund, puppy speak shih tzu stand husky bark doberman pinscher dog stay. Bell bulldog release Morkie great dance paw tennis ball leash bulldog, dog come yorkshire terrier german shephard.',
+  temperament: [ 'Stubborn', 'Curious' ],
+  is_female: true,
+  id: 18,
+  userId: 18,
+  updatedAt: '2021-09-06T04:28:58.686Z',
+  createdAt: '2021-09-06T04:28:58.686Z'
+}
+{
+  photo_url: 'https://images.unsplash.com/photo-1518020382113-a7e8fc38eac9?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8c2lsbHklMjBkb2d8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60',
+  name: 'Artemis',
+  breed: 'Miniature Pinscher',
+  weight: 33,
+  age: 2,
+  ad_description: 'Pit bull lap dog puppies chihuahua, german shephard peanut butter growl milk bone pomeranian sit. Squirrel stand english mastiff release dog bone growl dog bone, jump milk bone lab greyhound take it heel. Tennis ball stay jump beagle sit pretty german shephard pomsky. Dog milk bone bulldog german shephard dachshund, puppy speak shih tzu stand husky bark doberman pinscher dog stay. Bell bulldog release Morkie great dance paw tennis ball leash bulldog, dog come yorkshire terrier german shephard.',
+  temperament: [ 'Fun-loving', 'Loving' ],
+  is_female: true,
+  id: 20,
+  userId: 20,
+  updatedAt: '2021-09-06T04:28:58.690Z',
+  createdAt: '2021-09-06T04:28:58.690Z'
+}
