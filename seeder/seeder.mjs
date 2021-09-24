@@ -1,19 +1,19 @@
 import fetch from "node-fetch";
-const port = process.env.PORT || 3333
+// const port = process.env.PORT || 3333
 import dogOptions from "./dogOptions.js";
 import { lats, lons } from './randomCoords.js'
 
 const petTinderSeeder = async () => {
   for (let i = 1; i <= 20; i++) {
     const userBody = {
-      profile_name: `user${i}`,
+      profile_name: `seededuser${i}`,
       name: `${dogOptions.names[i]}'s breeder`,
       password: "password",
       email: `test${i}@test.com`,
     };
 
     const seedThatDB = async () => {
-      const user = await fetch(`http://localhost:${port}/user/signup`, {
+      const user = await fetch(`https://tmor-pet-tinder.herokuapp.com/user/signup`, {
         method: "POST",
         mode: "cors",
         body: JSON.stringify(userBody),
@@ -43,7 +43,7 @@ const petTinderSeeder = async () => {
 
       };
       // console.log(dogBody)
-      const dog = await fetch(`http://localhost:${port}/dog/`, {
+      const dog = await fetch(`https://tmor-pet-tinder.herokuapp.com/dog/`, {
         method: "POST",
         mode: "cors",
         body: JSON.stringify(dogBody),
@@ -58,7 +58,7 @@ const petTinderSeeder = async () => {
       for (let i = 0; i <= 20; i++) {
         const likeBody = { superlike: i % 2 === 0 ? true : false };
         const like = await fetch(
-          `http://localhost:${port}/like/${Math.floor(Math.random() * 20 + 1)}`,
+          `https://tmor-pet-tinder.herokuapp.com/like/${Math.floor(Math.random() * 20 + 1)}`,
           {
             method: "POST",
             mode: "cors",
