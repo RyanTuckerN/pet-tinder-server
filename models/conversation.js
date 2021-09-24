@@ -26,9 +26,6 @@ Conversation.findOrCreateConversation = function(user1Id, user2Id) {
         return Conversation.create({
           user1Id,
           user2Id
-        }, {
-          include: [ sequelize.models.message ],
-          order: [[ sequelize.models.message, 'createdAt', 'DESC' ]]
         });
       }
     });
