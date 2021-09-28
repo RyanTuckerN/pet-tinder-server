@@ -86,7 +86,7 @@ module.exports = (socket) => {
     });
   });
   socket.on('typing',({typing, chatTarget, senderId})=>{
-    if(chatTargets[chatTarget.id]===senderId){
+    if(chatTargets[chatTarget?.id]===senderId){
       const receiverSocketId = mobileSockets[chatTarget?.id];
       socket.to(receiverSocketId).emit('targetTyping', {typing, targetId: chatTarget.id})
     }
