@@ -18,6 +18,8 @@ module.exports = (socket) => {
         });
         socket.emit("newUser", { mobileSockets });
         socket.broadcast.emit("newUser", { mobileSockets });
+        console.log('MobileSockets📱: ', mobileSockets)  
+
       })
       .catch((err) => console.error(err));
   });
@@ -27,6 +29,8 @@ module.exports = (socket) => {
     Conversation.findOrCreateConversation(users.sender.id, users.receiver.id)
       .then((conversation) => {
         socket.emit("priorMessages", conversation);
+        console.log('MobileSockets📱: ', mobileSockets)  
+
       })
       .catch((err) => console.error(err));
   });
@@ -84,7 +88,7 @@ module.exports = (socket) => {
   socket.on('typing',({typing, chatTarget, senderId})=>{
     if(chatTargets[chatTarget.id]===senderId){
       const receiverSocketId = mobileSockets[chatTarget?.id];
-      socket.to(receiverSocketId).emit('targetTyping', {typing})
+      socket.to(receiverSocketId).emit('targetTyping', {typing, targetId: chatTarget.id})
     }
 
   })
@@ -92,7 +96,6 @@ module.exports = (socket) => {
   socket.on("socketUpdate", () => {
     socket.emit("newUser", { mobileSockets });
     socket.broadcast.emit("newUser", { mobileSockets });
-    console.log(mobileSockets)
   });
   socket.on("disconnect", () => {
     const getKeyByValue = (object, value) => {
