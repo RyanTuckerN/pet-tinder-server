@@ -1,9 +1,9 @@
 const { User, Conversation, Message, Dog, Notification } = require("../models");
 const sequelize = require("../db");
 const mobileSockets = {};
+const chatTargets = {};
 
 module.exports = (socket) => {
-  
   //***LOGIN EVENT***//
   socket.on("newLogin", (id) => {
     Promise.all([
@@ -24,13 +24,11 @@ module.exports = (socket) => {
 
   //***CHAT EVENT***//
   socket.on("chat", (users) => {
-    Conversation.findOrCreateConversation(
-      users.sender.id,
-      users.receiver.id
-    ).then((conversation) => {
-      socket.emit("priorMessages", conversation);
-    })
-    .catch(err=>console.error(err))
+    Conversation.findOrCreateConversation(users.sender.id, users.receiver.id)
+      .then((conversation) => {
+        socket.emit("priorMessages", conversation);
+      })
+      .catch((err) => console.error(err));
   });
 
   socket.on("matchRequest", (id) => {
@@ -49,7 +47,6 @@ module.exports = (socket) => {
         socket.broadcast.emit("matchUpdate", {
           message: "update your matches",
         });
-
       })
       .catch((err) => console.error(err));
   });
@@ -75,9 +72,11 @@ module.exports = (socket) => {
         (conversation) => {
           socket.emit("incomingMessage", { message, conversation }); //send the message back to the sender
           const receiverSocketId = mobileSockets[receiver.id];
-          socket
-            .to(receiverSocketId)
-            .emit("incomingMessage", { message, conversation }); //send the message to the other user if they are online? maybe?
+          if (chatTargets[receiver.id] == sender.id) {
+            socket
+              .to(receiverSocketId)
+              .emit("incomingMessage", { message, conversation });
+          } //send the message to the other user if they are online? maybe?
         }
       );
     });
@@ -91,8 +90,16 @@ module.exports = (socket) => {
     const getKeyByValue = (object, value) => {
       return Object.keys(object).find((key) => object[key] === value);
     };
-    delete mobileSockets[getKeyByValue(mobileSockets, socket.id)];
+    const loggedOutId = getKeyByValue(mobileSockets, socket.id);
+    delete mobileSockets[loggedOutId];
     socket.emit("newUser", { mobileSockets });
     socket.broadcast.emit("newUser", { mobileSockets });
   });
+
+  socket.on("chatTarget", ({ chatTarget, senderId }) => {
+    chatTargets[senderId] = chatTarget.id;
+    console.log(chatTargets);
+  });
+
+  socket.on("leftChat", ({ id }) => delete chatTargets[id]);
 };
