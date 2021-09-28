@@ -104,7 +104,7 @@ module.exports = (socket) => {
   });
 
   socket.on("chatTarget", ({ chatTarget, senderId }) => {
-    chatTargets[senderId] = chatTarget.id;
+    chatTargets[senderId] = chatTarget?.id;
     console.log(chatTargets);
   });
 
