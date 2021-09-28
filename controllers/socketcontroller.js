@@ -92,6 +92,7 @@ module.exports = (socket) => {
   socket.on("socketUpdate", () => {
     socket.emit("newUser", { mobileSockets });
     socket.broadcast.emit("newUser", { mobileSockets });
+    console.log(mobileSockets)
   });
   socket.on("disconnect", () => {
     const getKeyByValue = (object, value) => {
