@@ -76,20 +76,20 @@ module.exports = (socket) => {
   });
   //***MESSAGE EVENT***//
   socket.on("message", ({ text, sender, receiver }) => {
+    if (chatTargets[receiver.id] != sender.id) {
     ChatNotification.create({ senderId: sender.id, userId: receiver.id }).then(
       (notification) => {
         ChatNotification.findAll({ where: { userId: receiver.id } }).then(
           (notifications) => {
-            if (chatTargets[receiver.id] != sender.id) {
               const receiverSocketId = mobileSockets[receiver.id];
               socket
                 .to(receiverSocketId)
                 .emit("chatNotificationUpdate", notifications);
+              }
+              );
             }
+            );
           }
-        );
-      }
-    );
     Message.createMessage(text, sender, receiver).then((message) => {
       Conversation.findOrCreateConversation(sender.id, receiver.id).then(
         (conversation) => {
