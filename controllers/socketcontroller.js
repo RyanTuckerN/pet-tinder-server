@@ -132,7 +132,10 @@ module.exports = (socket) => {
   });
 
   //REMOVE CHAT TARGET FROM CHATTARGET HASHTABLE
-  socket.on("leftChat", ({ id }) => delete chatTargets[id]);
+  socket.on("leftChat", ({ id }) => {
+    delete chatTargets[id]
+    console.log(`user ${id} left chat`)
+  });
 
   //SOCKET UPDATE REQUEST FROM CLIENT
   socket.on("socketUpdate", () => {
