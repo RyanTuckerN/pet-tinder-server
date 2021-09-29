@@ -120,9 +120,9 @@ module.exports = (socket) => {
   socket.on("typing", ({ typing, chatTarget, senderId }) => {
     const receiverSocketId = mobileSockets[chatTarget?.id];
     socket.to(receiverSocketId).emit("userTyping", { typing, senderId });
-    if (chatTargets[chatTarget?.id] === senderId) {
+    // if (chatTargets[chatTarget?.id] === senderId) {
       socket.to(receiverSocketId).emit("targetTyping", { typing, senderId });
-    }
+    // }
   });
 
   //CHAT TARGET UPDATE EVENT
