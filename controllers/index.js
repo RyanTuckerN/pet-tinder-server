@@ -3,5 +3,6 @@ module.exports = {
   dogcontroller: require('./dogcontroller'),
   likecontroller: require('./likecontroller'),
   notificationcontroller: require('./notificationcontroller'),
+  chatnotificationcontroller: require('./chatnotificationcontroller'),
   socketcontroller: require('./socketcontroller')
 }

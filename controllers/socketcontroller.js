@@ -1,7 +1,14 @@
-const { User, Conversation, Message, Dog, Notification } = require("../models");
+const {
+  User,
+  Conversation,
+  Message,
+  Dog,
+  Notification,
+  ChatNotification,
+} = require("../models");
 const sequelize = require("../db");
 const mobileSockets = {};
-const chatTargets = {};
+const chatTargets = {}; //key is sender, value is target
 
 module.exports = (socket) => {
   //***LOGIN EVENT***//
@@ -18,8 +25,7 @@ module.exports = (socket) => {
         });
         socket.emit("newUser", { mobileSockets });
         socket.broadcast.emit("newUser", { mobileSockets });
-        console.log('MobileSockets📱: ', mobileSockets)  
-
+        console.log("MobileSockets📱: ", mobileSockets);
       })
       .catch((err) => console.error(err));
   });
@@ -29,8 +35,7 @@ module.exports = (socket) => {
     Conversation.findOrCreateConversation(users.sender.id, users.receiver.id)
       .then((conversation) => {
         socket.emit("priorMessages", conversation);
-        console.log('MobileSockets📱: ', mobileSockets)  
-
+        console.log("MobileSockets📱: ", mobileSockets);
       })
       .catch((err) => console.error(err));
   });
@@ -71,6 +76,20 @@ module.exports = (socket) => {
   });
   //***MESSAGE EVENT***//
   socket.on("message", ({ text, sender, receiver }) => {
+    ChatNotification.create({ senderId: sender.id, userId: receiver.id }).then(
+      (notification) => {
+        ChatNotification.findAll({ where: { userId: receiver.id } }).then(
+          (notifications) => {
+            if (chatTargets[receiver.id] != sender.id) {
+              const receiverSocketId = mobileSockets[receiver.id];
+              socket
+                .to(receiverSocketId)
+                .emit("chatNotificationUpdate", notifications);
+            }
+          }
+        );
+      }
+    );
     Message.createMessage(text, sender, receiver).then((message) => {
       Conversation.findOrCreateConversation(sender.id, receiver.id).then(
         (conversation) => {
@@ -85,18 +104,43 @@ module.exports = (socket) => {
       );
     });
   });
-  socket.on('typing',({typing, chatTarget, senderId})=>{
-    if(chatTargets[chatTarget?.id]===senderId){
-      const receiverSocketId = mobileSockets[chatTarget?.id];
-      socket.to(receiverSocketId).emit('targetTyping', {typing, senderId})
+
+  //CHAT NOTIFICATION REQUEST
+  socket.on("chatNoteRequest", ({ senderId, userId }) => {
+    if (senderId !== null && userId !== null) {
+      ChatNotification.findAll({ where: { senderId, userId } }).then(
+        (notifications) => {
+          socket.emit("chatNotificationUpdate", notifications);
+        }
+      );
     }
+  });
 
-  })
+  //TYPING EVENT
+  socket.on("typing", ({ typing, chatTarget, senderId }) => {
+    const receiverSocketId = mobileSockets[chatTarget?.id];
+    socket.to(receiverSocketId).emit("userTyping", { typing, senderId });
+    if (chatTargets[chatTarget?.id] === senderId) {
+      socket.to(receiverSocketId).emit("targetTyping", { typing, senderId });
+    }
+  });
 
+  //CHAT TARGET UPDATE EVENT
+  socket.on("chatTarget", ({ chatTarget, senderId }) => {
+    chatTargets[senderId] = chatTarget?.id;
+    console.log(chatTargets);
+  });
+
+  //REMOVE CHAT TARGET FROM CHATTARGET HASHTABLE
+  socket.on("leftChat", ({ id }) => delete chatTargets[id]);
+
+  //SOCKET UPDATE REQUEST FROM CLIENT
   socket.on("socketUpdate", () => {
     socket.emit("newUser", { mobileSockets });
     socket.broadcast.emit("newUser", { mobileSockets });
   });
+
+  //SOCKET DISCONNECT
   socket.on("disconnect", () => {
     const getKeyByValue = (object, value) => {
       return Object.keys(object).find((key) => object[key] === value);
@@ -106,11 +150,4 @@ module.exports = (socket) => {
     socket.emit("newUser", { mobileSockets });
     socket.broadcast.emit("newUser", { mobileSockets });
   });
-
-  socket.on("chatTarget", ({ chatTarget, senderId }) => {
-    chatTargets[senderId] = chatTarget?.id;
-    console.log(chatTargets);
-  });
-
-  socket.on("leftChat", ({ id }) => delete chatTargets[id]);
 };

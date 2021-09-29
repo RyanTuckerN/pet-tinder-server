@@ -38,6 +38,7 @@ app.use("/user", controllers.usercontroller);
 app.use('/note', controllers.notificationcontroller)
 //PROTECTED ENDPOINTS
 // app.use(require("./middleware/validateSession"));
+app.use('/chat-note', controllers.chatnotificationcontroller)
 app.use("/dog", controllers.dogcontroller);
 app.use("/like", controllers.likecontroller);
 io.on("connection", controllers.socketcontroller);
