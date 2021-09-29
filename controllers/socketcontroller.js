@@ -106,7 +106,7 @@ module.exports = (socket) => {
   });
 
   //CHAT NOTIFICATION REQUEST
-  socket.on("chatNoteRequest", ({ senderId, userId }) => {
+  socket.on("chatNoteRequest", ({ userId }) => {
     if (userId !== null) {
       ChatNotification.findAll({ where: { userId } }).then(
         (notifications) => {
