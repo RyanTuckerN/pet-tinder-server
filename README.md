@@ -1,5 +1,4 @@
 # SERVER
-### Gig management software for musicians and freelancers
 
 ### Forking the Project
 
